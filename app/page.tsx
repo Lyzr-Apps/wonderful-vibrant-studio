@@ -133,8 +133,8 @@ function Dashboard({ candidates, onNewOnboarding, onInitiate }: any) {
         </Card>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div className="lg:col-span-3">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
               <div>
@@ -178,7 +178,21 @@ function Dashboard({ candidates, onNewOnboarding, onInitiate }: any) {
           </Card>
         </div>
 
-        <div>
+        <div className="space-y-6">
+          <Card className="overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 border-blue-200">
+            <CardHeader className="pb-3">
+              <CardTitle className="text-lg">Onboarding in Progress</CardTitle>
+              <CardDescription>Keep the momentum going</CardDescription>
+            </CardHeader>
+            <CardContent className="flex justify-center">
+              <img
+                src="https://media.giphy.com/media/3o85xIO33l7RlmLR2I/giphy.gif"
+                alt="Dancing Peter Griffin"
+                className="w-full h-auto rounded-lg"
+              />
+            </CardContent>
+          </Card>
+
           <Card>
             <CardHeader>
               <CardTitle className="text-lg">Quick Add</CardTitle>
